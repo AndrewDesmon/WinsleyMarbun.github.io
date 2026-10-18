@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unduh COLREGs: Jaga Anjungan</title>
+<meta name="description" content="Pasang aplikasi belajar COLREGs untuk taruna dan perwira di Android, iPhone, iPad, dan laptop. Gratis dan bisa dipakai tanpa internet.">
+<meta name="theme-color" content="#0E2742">
+<meta property="og:title" content="COLREGs: Jaga Anjungan">
+<meta property="og:description" content="Aplikasi belajar COLREGs untuk taruna dan perwira. Gratis, bisa dipakai tanpa internet.">
+<meta property="og:image" content="icon-512.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#E7EEF0;--card:#fff;--ink:#0F2A40;--muted:#4F6676;--line:#C9D6DC;--band:#0E2742;--bandInk:#F2F6F8;--bandMuted:#B3C4D0;--port:#C8202F;--stbd:#11875A;--ok:#11875A;--sea:#DCE8EC;--amber:#C98A00;--onInk:#fff;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--paper:#08141E;--card:#0F2130;--ink:#E6EEF2;--muted:#9DB2C0;--line:#23384A;--band:#0B1E30;--sea:#15303F;--ok:#2FC47F;--amber:#F2B624;--onInk:#08141E;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 Barlow,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-top:env(safe-area-inset-top,0px)}
+a{color:inherit}
+.band{background:var(--band);color:var(--bandInk);border-bottom:4px solid;border-image:linear-gradient(90deg,var(--port) 50%,var(--stbd) 50%) 1}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px}
+.band .wrap{display:flex;align-items:baseline;gap:8px;padding-top:12px;padding-bottom:14px}
+.band b{font:700 28px "Barlow Condensed",sans-serif;letter-spacing:.3px}.band span{color:var(--bandMuted);font-size:15px}
+.hero{display:flex;gap:18px;align-items:center;padding:26px 0 8px}
+.hero img{width:96px;height:96px;border-radius:22px;flex:none;box-shadow:0 6px 20px rgba(0,0,0,.18)}
+h1{font:700 34px/1.1 "Barlow Condensed",sans-serif;margin:0 0 6px}
+h2{font:700 26px/1.15 "Barlow Condensed",sans-serif;margin:30px 0 10px}
+.lead{color:var(--muted);margin:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--ink);color:var(--onInk);border:0;border-radius:10px;padding:12px 20px;font:600 17px Barlow,sans-serif;text-decoration:none;cursor:pointer;min-height:48px}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn:focus-visible,.tab:focus-visible,summary:focus-visible{outline:3px solid #2A7DE1;outline-offset:2px}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 4px}
+.tab{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:9px 16px;font:600 16px Barlow,sans-serif;cursor:pointer;min-height:44px}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--onInk);border-color:var(--ink)}
+ol.steps{margin:6px 0 0;padding-left:24px}ol.steps li{margin:6px 0}
+.note{border-left:5px solid var(--amber)}.ok{border-left:5px solid var(--ok)}
+.muted{color:var(--muted)}.fine{font-size:14.5px;color:var(--muted)}
+.shots{display:flex;gap:12px;overflow-x:auto;padding:4px 2px 12px;scroll-snap-type:x mandatory}
+.shots figure{margin:0;flex:none;width:200px;scroll-snap-align:start}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);display:block;background:var(--sea)}
+.shots figcaption{font-size:14px;color:var(--muted);margin-top:6px}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.feat div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.feat strong{display:block}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:8px 0;padding:0 14px}
+summary{cursor:pointer;font-weight:600;padding:12px 0;min-height:44px}
+details p{margin:0 0 12px}
+footer{margin:34px 0 calc(30px + env(safe-area-inset-bottom,0px));font-size:14.5px;color:var(--muted)}
+[hidden]{display:none !important}
+@media (max-width:480px){.hero img{width:76px;height:76px;border-radius:18px}h1{font-size:30px}}
+</style>
+</head>
+<body>
+<header class="band"><div class="wrap"><b>COLREGs</b><span>Jaga Anjungan</span></div></header>
+<main class="wrap">
+  <div class="hero"><img src="icon-192.png" alt="" width="96" height="96"><div><h1>COLREGs: Jaga Anjungan</h1><p class="lead">Aplikasi belajar COLREGs untuk taruna dan perwira. Gratis, bahasa Indonesia, dan bisa dipakai tanpa internet.</p></div></div>
+
+  <div id="st"></div>
+  <div class="card note" id="inapp" hidden><strong>Buka halaman ini di browser.</strong><p style="margin:4px 0 0">Anda membukanya dari dalam aplikasi lain (misalnya Instagram atau Facebook). Dari sini aplikasi tidak bisa dipasang. Ketuk menu ⋯ lalu pilih "Buka di browser", atau salin alamat halaman ini ke Chrome atau Safari.</p></div>
+
+  <h2>Pasang aplikasi</h2>
+  <div class="tabs" role="tablist" aria-label="Pilih perangkat">
+    <button class="tab" role="tab" id="t-android" aria-controls="p-android" aria-selected="false">Android</button>
+    <button class="tab" role="tab" id="t-ios" aria-controls="p-ios" aria-selected="false">iPhone dan iPad</button>
+    <button class="tab" role="tab" id="t-desk" aria-controls="p-desk" aria-selected="false">Laptop</button>
+  </div>
+  <section class="card" role="tabpanel" id="p-android" aria-labelledby="t-android">
+    <div class="row" id="instwrap" hidden><button class="btn" id="inst">Pasang aplikasi</button><span class="muted">Ikon muncul di layar utama.</span></div>
+    <ol class="steps" id="andsteps">
+      <li>Buka halaman ini di <strong>Chrome</strong>.</li>
+      <li>Ketuk menu <strong>⋮</strong> di kanan atas.</li>
+      <li>Pilih <strong>Instal aplikasi</strong> atau <strong>Tambahkan ke layar utama</strong>.</li>
+      <li>Ikon <strong>Jaga Anjungan</strong> muncul di layar utama. Buka dari sana.</li>
+    </ol>
+    <div id="apk" hidden style="margin-top:14px;border-top:1px solid var(--line);padding-top:12px">
+      <strong>Atau unduh file APK</strong>
+      <p class="muted" style="margin:4px 0 10px">Untuk yang lebih suka memasang file aplikasi. Android akan meminta izin memasang dari sumber ini.</p>
+      <a class="btn ghost" href="jaga-anjungan.apk" download>Unduh APK</a>
+    </div>
+  </section>
+  <section class="card" role="tabpanel" id="p-ios" aria-labelledby="t-ios" hidden>
+    <p id="iosnotsafari" class="muted" hidden style="margin-top:0">Untuk hasil terbaik, buka halaman ini di <strong>Safari</strong>.</p>
+    <ol class="steps">
+      <li>Buka halaman ini di <strong>Safari</strong>.</li>
+      <li>Ketuk tombol <strong>Bagikan</strong> (kotak dengan panah ke atas).</li>
+      <li>Gulir lalu pilih <strong>Tambahkan ke Layar Utama</strong>.</li>
+      <li>Ketuk <strong>Tambah</strong>. Ikon <strong>Jaga Anjungan</strong> muncul di layar utama.</li>
+    </ol>
+  </section>
+  <section class="card" role="tabpanel" id="p-desk" aria-labelledby="t-desk" hidden>
+    <div class="row" id="instwrap2" hidden style="margin-bottom:8px"><button class="btn" id="inst2">Pasang aplikasi</button></div>
+    <ol class="steps">
+      <li><strong>Chrome atau Edge:</strong> klik ikon pasang di ujung kanan bilah alamat, atau buka menu lalu pilih <strong>Instal</strong> / <strong>Pasang aplikasi</strong>.</li>
+      <li><strong>Safari di Mac:</strong> buka menu <strong>File</strong>, lalu pilih <strong>Tambahkan ke Dock</strong>.</li>
+    </ol>
+  </section>
+  <p class="row" style="margin-top:6px"><a class="btn ghost" href="index.html">Buka tanpa memasang</a></p>
+
+  <h2>Tampilan aplikasi</h2>
+  <div class="shots" tabindex="0" aria-label="Tangkapan layar aplikasi">
+    <figure><img src="layar-beranda.webp" alt="Beranda dengan rute belajar, pangkat, dan tantangan harian" width="390" height="844" loading="lazy"><figcaption>Rute belajar, pangkat, dan tantangan harian</figcaption></figure>
+    <figure><img src="layar-aturan.webp" alt="Halaman Aturan 7 dengan teks asli, terjemahan, dan pemutar suara" width="390" height="844" loading="lazy"><figcaption>Teks asli, terjemahan, dan bacaan suara</figcaption></figure>
+    <figure><img src="layar-simulasi.webp" alt="Simulasi situasi bersilangan dilihat dari atas, dengan baringan dan jarak" width="390" height="844" loading="lazy"><figcaption>Simulasi dengan baringan, dari atas atau dari anjungan</figcaption></figure>
+    <figure><img src="layar-jaga.webp" alt="Latihan jaga anjungan: mengenali lampu kapal dan memilih tindakan" width="390" height="844" loading="lazy"><figcaption>Jaga anjungan dengan batas waktu</figcaption></figure>
+  </div>
+
+  <h2>Isinya</h2>
+  <div class="feat">
+    <div><strong>Materi lengkap</strong>Aturan 1–41, Annex I–IV, Pasal Konvensi, dan Tugas Jaga, dengan teks asli dan terjemahan.</div>
+    <div><strong>Latihan</strong>Bank soal, tantangan harian, buku kesalahan, kartu hafalan, lampu, sosok, dan isyarat.</div>
+    <div><strong>Simulasi</strong>Animasi 9 aturan, latihan radar CPA/TCPA, jaga anjungan, dan analisis kecelakaan.</div>
+    <div><strong>Dengarkan</strong>Setiap aturan bisa dibacakan, dalam bahasa Inggris dan Indonesia.</div>
+    <div><strong>Tanpa internet</strong>Setelah dipasang, semua materi dan latihan jalan offline.</div>
+    <div><strong>Jenjang pangkat</strong>Dari Kadet sampai Nakhoda, dengan statistik per bagian.</div>
+  </div>
+
+  <h2>Pertanyaan umum</h2>
+  <details><summary>Apakah gratis?</summary><p>Ya. Tidak ada iklan dan tidak perlu membuat akun.</p></details>
+  <details><summary>Apakah butuh internet?</summary><p>Hanya saat memasang dan saat ada pembaruan. Setelah itu materi, latihan, dan simulasi berjalan tanpa internet. Fitur AI (Tanya AI dan ujian lisan) dibuka di claude.ai dan membutuhkan internet.</p></details>
+  <details><summary>Di mana progres saya disimpan?</summary><p>Hanya di perangkat Anda. Untuk memindahkan ke perangkat lain atau membuat cadangan, gunakan Ekspor dan Impor di menu Profil.</p></details>
+  <details><summary>Bagaimana dengan pembaruan?</summary><p>Aplikasi memeriksa pembaruan sendiri. Bila ada versi baru, muncul pemberitahuan dan cukup ketuk Muat ulang.</p></details>
+  <details><summary>Apakah ini terbitan resmi?</summary><p>Bukan. Ini aplikasi belajar mandiri. Terjemahan bahasa Indonesia tidak resmi; untuk keperluan resmi, rujuk teks COLREGs yang diterbitkan IMO.</p></details>
+
+  <footer>
+    <p><a href="privasi.html">Kebijakan privasi</a></p>
+    <p>COLREGs: Jaga Anjungan adalah aplikasi belajar mandiri dan bukan terbitan resmi IMO. Terjemahan bahasa Indonesia tidak resmi.</p>
+  </footer>
+</main>
+<script>
+(function(){
+  var ua = navigator.userAgent || '';
+  var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var android = /Android/.test(ua);
+  var inapp = /FBAN|FBAV|Instagram|Line\/|TikTok|musical_ly|Snapchat/i.test(ua);
+  var standalone = false; try{ standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true; }catch(e){}
+  var tabs = ['android','ios','desk'];
+  function show(k){ tabs.forEach(function(t){ document.getElementById('t-' + t).setAttribute('aria-selected', t === k); document.getElementById('p-' + t).hidden = t !== k; }); }
+  tabs.forEach(function(t){ document.getElementById('t-' + t).onclick = function(){ show(t); }; });
+  show(ios ? 'ios' : android ? 'android' : 'desk');
+  if(inapp) document.getElementById('inapp').hidden = false;
+  if(ios && /CriOS|FxiOS|EdgiOS/.test(ua)) document.getElementById('iosnotsafari').hidden = false;
+  var st = document.getElementById('st');
+  if(standalone) st.innerHTML = '<div class="card ok"><strong>Aplikasi sudah terpasang.</strong><p style="margin:4px 0 10px">Anda sedang membuka halaman ini dari aplikasinya.</p><a class="btn" href="index.html">Buka aplikasi</a></div>';
+  var prompt = null;
+  window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); prompt = e; document.getElementById('instwrap').hidden = false; document.getElementById('instwrap2').hidden = false; document.getElementById('andsteps').hidden = true; });
+  function doInstall(){ if(!prompt) return; var p = prompt; prompt = null; p.prompt(); if(p.userChoice) p.userChoice.then(function(){ document.getElementById('instwrap').hidden = true; document.getElementById('instwrap2').hidden = true; document.getElementById('andsteps').hidden = false; }); }
+  document.getElementById('inst').onclick = doInstall; document.getElementById('inst2').onclick = doInstall;
+  window.addEventListener('appinstalled', function(){ st.innerHTML = '<div class="card ok"><strong>Aplikasi terpasang.</strong><p style="margin:4px 0 0">Buka dari ikon Jaga Anjungan di layar utama.</p></div>'; });
+  try{ fetch('jaga-anjungan.apk', {method:'HEAD'}).then(function(r){ if(r.ok) document.getElementById('apk').hidden = false; }).catch(function(){}); }catch(e){}
+  if('serviceWorker' in navigator) window.addEventListener('load', function(){ navigator.serviceWorker.register('sw.js').catch(function(){}); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+COLREGs: Jaga Anjungan, paket situs dan aplikasi (PWA)
+Versi build: 2026.10.18-967383
+
+PENTING: jangan membuka index.html dengan penampil HTML bawaan Android atau pratinjau
+pengelola file. Penampil itu tidak menjalankan JavaScript, sehingga layar tampak kosong.
+
+Semua file sengaja diletakkan dalam satu tingkat (tanpa subfolder) supaya mudah
+diunggah dari browser tablet atau ponsel.
+
+  index.html            aplikasi lengkap
+  unduh.html            halaman unduhan (tautan inilah yang dibagikan ke orang lain)
+  privasi.html          kebijakan privasi
+  manifest.webmanifest  nama, ikon, dan warna aplikasi saat dipasang
+  sw.js                 service worker untuk mode offline dan pembaruan
+  icon-*.png, icon.svg, apple-touch-icon.png, favicon-32.png   ikon
+  layar-*.webp          tangkapan layar untuk halaman unduhan dan jendela pasang
+
+Cara memakai: unggah SEMUA file ini ke GitHub Pages sesuai panduan Tahap 5B.
+Untuk pembaruan, unggah ulang semua file dengan nama yang sama.

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kebijakan privasi: COLREGs: Jaga Anjungan</title>
+<meta name="theme-color" content="#0E2742">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<style>
+:root{--paper:#E7EEF0;--card:#fff;--ink:#0F2A40;--muted:#4F6676;--line:#C9D6DC;--band:#0E2742;--bandInk:#F2F6F8;--bandMuted:#B3C4D0;--port:#C8202F;--stbd:#11875A;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--paper:#08141E;--card:#0F2130;--ink:#E6EEF2;--muted:#9DB2C0;--line:#23384A;--band:#0B1E30;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 Barlow,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-top:env(safe-area-inset-top,0px)}
+a{color:inherit}
+.band{background:var(--band);color:var(--bandInk);border-bottom:4px solid;border-image:linear-gradient(90deg,var(--port) 50%,var(--stbd) 50%) 1}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px}
+.band .wrap{display:flex;align-items:baseline;gap:8px;padding-top:12px;padding-bottom:14px}
+.band b{font:700 28px "Barlow Condensed",sans-serif}.band span{color:var(--bandMuted);font-size:15px}
+h1{font:700 32px/1.15 "Barlow Condensed",sans-serif;margin:24px 0 4px}
+h2{font:700 22px/1.2 "Barlow Condensed",sans-serif;margin:26px 0 6px}
+.muted{color:var(--muted)}
+ul{padding-left:22px}li{margin:4px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:14px 0}
+footer{margin:30px 0 calc(30px + env(safe-area-inset-bottom,0px));font-size:14.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header class="band"><div class="wrap"><b>COLREGs</b><span>Jaga Anjungan</span></div></header>
+<main class="wrap">
+  <h1>Kebijakan privasi</h1>
+  <p class="muted">Berlaku sejak 18 Oktober 2026</p>
+
+  <div class="card"><strong>Ringkasnya:</strong> aplikasi ini tidak meminta akun, tidak memasang iklan, tidak memakai alat analitik atau pelacak, dan tidak mengirim progres belajar Anda ke server mana pun.</div>
+
+  <h2>Data yang disimpan di perangkat Anda</h2>
+  <p>Aplikasi menyimpan data berikut di penyimpanan browser pada perangkat Anda sendiri:</p>
+  <ul>
+    <li>Kemajuan belajar: bagian yang sudah dipahami, hasil latihan, tantangan harian, pangkat, dan hasil simulasi.</li>
+    <li>Catatan yang Anda tulis.</li>
+    <li>Pengaturan, misalnya bahasa tampilan, mode malam, dan pilihan suara bacaan.</li>
+  </ul>
+  <p>Data ini tidak dikirim ke pengembang atau pihak lain. Bila Anda memakai fitur Ekspor, file atau kode ekspor sepenuhnya berada di bawah kendali Anda.</p>
+
+  <h2>Layanan pihak ketiga</h2>
+  <ul>
+    <li><strong>Hosting (GitHub Pages).</strong> Situs ini dihosting oleh GitHub. Seperti layanan hosting pada umumnya, GitHub dapat mencatat data teknis kunjungan, misalnya alamat IP, sesuai kebijakan privasi GitHub.</li>
+    <li><strong>Font (Google Fonts).</strong> Saat aplikasi dibuka online, huruf tampilannya diunduh dari server Google. Dalam proses itu Google dapat menerima alamat IP dan informasi browser Anda, sesuai kebijakan privasi Google.</li>
+    <li><strong>Fitur AI (claude.ai).</strong> Tanya AI dan ujian lisan tidak berjalan di dalam aplikasi ini. Bila Anda menekan "Buka di claude.ai", Anda berpindah ke layanan claude.ai milik Anthropic, dan yang berlaku di sana adalah ketentuan serta kebijakan privasi Anthropic.</li>
+    <li><strong>Suara bacaan.</strong> Fitur Dengarkan memakai mesin teks-ke-ucapan bawaan perangkat atau browser Anda. Sebagian suara yang disediakan browser bersifat online dan dapat memproses teks bacaan di server penyedia browser tersebut.</li>
+  </ul>
+
+  <h2>Anak-anak</h2>
+  <p>Aplikasi ini tidak mengumpulkan data pribadi dari siapa pun, termasuk anak-anak.</p>
+
+  <h2>Menghapus data</h2>
+  <p>Buka menu Profil, lalu pilih <strong>Hapus semua progres dan catatan</strong>. Menghapus aplikasi dari perangkat atau menghapus data situs di pengaturan browser juga menghapus semua data aplikasi.</p>
+
+  <h2>Perubahan kebijakan</h2>
+  <p>Bila kebijakan ini berubah, versi terbarunya diterbitkan di halaman ini dengan tanggal berlaku yang baru.</p>
+
+  <h2>Kontak</h2>
+  <p id="kontak">Pertanyaan tentang privasi dapat disampaikan kepada pengembang aplikasi ini.</p>
+
+  <footer><p><a href="unduh.html">Kembali ke halaman unduhan</a></p></footer>
+</main>
+<script>
+(function(){
+  var h = location.hostname, m = /^([a-z0-9-]+)\.github\.io$/i.exec(h);
+  if(m){ var u = 'https://github.com/' + m[1] + '/' + m[1] + '.github.io/issues'; document.getElementById('kontak').innerHTML = 'Pertanyaan tentang privasi dapat disampaikan kepada pengembang melalui <a href="' + u + '">halaman Issues di GitHub</a>.'; }
+})();
+</script>
+</body>
+</html>

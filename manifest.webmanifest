@@ -1,0 +1,113 @@
+{
+ "id": "./",
+ "name": "COLREGs: Jaga Anjungan",
+ "short_name": "Jaga Anjungan",
+ "description": "Belajar COLREGs untuk taruna dan perwira: materi, latihan, simulasi, dan jaga anjungan. Bisa dipakai tanpa internet.",
+ "lang": "id",
+ "dir": "ltr",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "any",
+ "background_color": "#0E2742",
+ "theme_color": "#0E2742",
+ "categories": [
+  "education"
+ ],
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "icon-maskable-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "maskable"
+  },
+  {
+   "src": "icon-maskable-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "Tantangan harian",
+   "short_name": "Harian",
+   "url": "./#/latihan/harian",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "Simulasi",
+   "url": "./#/simulasi",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "Materi",
+   "url": "./#/materi",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  }
+ ],
+ "screenshots": [
+  {
+   "src": "layar-aturan.webp",
+   "sizes": "780x1688",
+   "type": "image/webp",
+   "form_factor": "narrow",
+   "label": "Teks asli, terjemahan, dan bacaan suara"
+  },
+  {
+   "src": "layar-beranda.webp",
+   "sizes": "780x1688",
+   "type": "image/webp",
+   "form_factor": "narrow",
+   "label": "Rute belajar, pangkat, dan tantangan harian"
+  },
+  {
+   "src": "layar-jaga.webp",
+   "sizes": "780x1688",
+   "type": "image/webp",
+   "form_factor": "narrow",
+   "label": "Jaga anjungan: kenali lampu, pilih tindakan"
+  },
+  {
+   "src": "layar-lebar.webp",
+   "sizes": "1280x800",
+   "type": "image/webp",
+   "form_factor": "wide",
+   "label": "Simulasi dan radar di layar lebar"
+  },
+  {
+   "src": "layar-simulasi.webp",
+   "sizes": "780x1688",
+   "type": "image/webp",
+   "form_factor": "narrow",
+   "label": "Simulasi situasi bersilangan dengan baringan"
+  }
+ ]
+}
